@@ -1,0 +1,12 @@
+---
+- name: restart ssh redhat
+  service:
+    name: sshd
+    state: restarted
+  when: ansible_os_family == "RedHat"
+
+- name: restart ssh debian
+  service:
+    name: ssh
+    state: restarted
+  when: ansible_os_family == "Debian"

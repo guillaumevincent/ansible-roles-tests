@@ -1,0 +1,5 @@
+---
+ADMIN_USERNAME: admin
+SSH_PORT: 22
+PUBLIC_KEYS:
+  - ~/.ssh/id_rsa.pub

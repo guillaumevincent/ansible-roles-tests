@@ -1,0 +1,8 @@
+---
+- hosts: all
+  become: yes
+  become_user: root
+  roles:
+    - {role: 'configure_admin_user', tags: 'configure_admin_user'}
+    - {role: 'configure_ssh', tags: 'configure_ssh'}
+    - {role: 'upgrade_system', tags: 'upgrade_system'}
