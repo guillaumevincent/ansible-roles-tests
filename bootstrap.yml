@@ -4,5 +4,6 @@
   become_user: root
   roles:
     - {role: 'configure_admin_user', tags: 'configure_admin_user'}
-    - {role: 'configure_ssh', tags: 'configure_ssh'}
+    - {role: 'configure-ssh', tags: 'configure-ssh'}
     - {role: 'upgrade_system', tags: 'upgrade_system'}
+    - {role: 'install_fail2ban', tags: 'install_fail2ban'}

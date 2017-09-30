@@ -1,4 +1,0 @@
-[test]
-centos ansible_host=172.16.172.2 ansible_ssh_extra_args='-o StrictHostKeyChecking=no'
-debian ansible_host=172.16.172.3 ansible_ssh_extra_args='-o StrictHostKeyChecking=no'
-ubuntu ansible_host=172.16.172.4 ansible_ssh_extra_args='-o StrictHostKeyChecking=no'

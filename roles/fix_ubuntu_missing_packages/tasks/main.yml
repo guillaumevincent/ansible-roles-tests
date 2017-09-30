@@ -1,0 +1,4 @@
+---
+- name: Install python-minimal aptitude on Ubuntu system
+  raw: apt-get install python-minimal aptitude -y
+  when: ansible_distribution == 'Ubuntu'

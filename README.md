@@ -1,4 +1,4 @@
-# ansible-tdd-vagrant
+# ansible-roles-tests
 
 # requirements
 
@@ -11,5 +11,5 @@
    
  * install virtualenv on your system
  * create virtualenv in venv folder
- * start 3 VM with vagrant (Centos 7, Debian 8 and Ubuntu 14.04)
+ * start VM with vagrant (Centos 7 and Debian 8)
  * Run every roles and the associated tests

@@ -1,0 +1,16 @@
+---
+- name: Install fail2ban on Red Hat system
+  yum:
+    name: fail2ban
+    state: latest
+  when: ansible_os_family == "RedHat"
+  notify:
+    - restart fail2ban
+
+- name: Install fail2ban on Debian system
+  apt:
+    name: fail2ban
+    state: latest
+  when: ansible_os_family == "Debian"
+  notify:
+    - restart fail2ban
