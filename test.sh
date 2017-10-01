@@ -11,6 +11,7 @@ python -m pip install -Ur requirements.txt
 export ANSIBLE_HOST_KEY_CHECKING=False
 vagrant destroy -f
 vagrant box update
+vagrant box prune
 vagrant up
 
 # Check
@@ -19,7 +20,7 @@ ansible test --inventory=inventory --user=vagrant --private-key=~/.vagrant.d/ins
 # Test
 ansible-playbook --inventory=inventory --user=vagrant --private-key=~/.vagrant.d/insecure_private_key bootstrap.yml --tags "configure_admin_user"
 ansible-playbook --inventory=inventory --user=admin --private-key=~/.ssh/id_rsa.pub tests/configure_admin_user.yml
-ansible-playbook --inventory=inventory --user=vagrant --private-key=~/.vagrant.d/insecure_private_key bootstrap.yml --tags "configure-ssh"
+ansible-playbook --inventory=inventory --user=vagrant --private-key=~/.vagrant.d/insecure_private_key roles/tests/bootstrap.yml --tags "configure-ssh"
 ansible-playbook --inventory=inventory --user=admin --private-key=~/.ssh/id_rsa.pub tests/configure-ssh.yml
 
 # TearDown

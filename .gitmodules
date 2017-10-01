@@ -1,3 +1,6 @@
 [submodule "roles/configure-ssh"]
 	path = roles/configure-ssh
 	url = git@github.com:guillaumevincent/ansible-role-configure-ssh.git
+[submodule "roles/configure-sudoer"]
+	path = roles/configure-sudoer
+	url = git@github.com:guillaumevincent/ansible-role-configure-sudoer.git
