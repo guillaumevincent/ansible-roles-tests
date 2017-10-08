@@ -4,3 +4,6 @@
 [submodule "roles/configure-sudoer"]
 	path = roles/configure-sudoer
 	url = git@github.com:guillaumevincent/ansible-role-configure-sudoer.git
+[submodule "roles/upgrade-system"]
+	path = roles/upgrade-system
+	url = git@github.com:guillaumevincent/ansible-role-upgrade-system.git
